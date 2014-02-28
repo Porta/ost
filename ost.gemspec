@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
     "test/*.*"
   ]
 
-  s.add_dependency "nest", "~> 1.0"
+  s.add_dependency "nido", "~> 0.0.1"
+  s.add_dependency "redic", "~> 1.0.1"
   s.add_development_dependency "cutest", "~> 1.0"
 end
