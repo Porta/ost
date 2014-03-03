@@ -77,11 +77,11 @@ module Ost
 
   @options = nil
 
-  def self.connect(options = {})
+  def self.connect(options = nil)
     @options = options
   end
 
   def self.options
-    @options || {}
+    @options || "redis://127.0.0.1:6379"
   end
 end

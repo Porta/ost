@@ -172,4 +172,13 @@ scope do
 
     assert_equal 0, queue.size
   end
+
+  test "passing url to connect" do
+    assert_equal "redis://127.0.0.1:6379", Ost.options
+
+    Ost.connect("redis://127.0.0.1:6379/11")
+
+    assert_equal "redis://127.0.0.1:6379/11", Ost.options
+  end
+
 end
